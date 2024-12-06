@@ -4,6 +4,7 @@ public:
         sort(banned.begin(), banned.end());
 
         int bannedIdx = 0, count = 0;
+        
         for (int num = 1; num <= n && maxSum >= 0; num++) {
             if (bannedIdx < banned.size() && banned[bannedIdx] == num) {
                 while (bannedIdx < banned.size() && banned[bannedIdx] == num) {
